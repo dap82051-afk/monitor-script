@@ -1,0 +1,13 @@
+# Конфигурация мониторинга (пример)
+
+DISK_THRESHOLD=80
+RAM_THRESHOLD=80
+CPU_THRESHOLD=80
+
+SERVICES="nginx docker ssh"
+
+LOG_FILE="/var/log/monitor.log"
+
+TELEGRAM_ENABLED=true
+TELEGRAM_BOT_TOKEN="....."
+TELEGRAM_CHAT_ID="....."

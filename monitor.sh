@@ -8,11 +8,17 @@ source "$SCRIPT_DIR/lib/logger.sh"
 source "$SCRIPT_DIR/lib/disk.sh"
 source "$SCRIPT_DIR/lib/ram.sh"
 source "$SCRIPT_DIR/lib/services.sh"
+source "$SCRIPT_DIR/lib/cpu.sh"
+source "$SCRIPT_DIR/lib/network.sh"
+source "$SCRIPT_DIR/lib/services.sh"
 
 log "INFO" "Мониторинг запущен"
 
 check_disk
 check_ram
+check_cpu
+check_network
 check_services
+
 
 log "INFO" "Мониторинг завершён"
